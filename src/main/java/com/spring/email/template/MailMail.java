@@ -23,4 +23,12 @@ public class MailMail {
 		message.setText(String.format(simpleMailMessage.getText(), dear, content));
 		mailSender.send(message);
 	}
+
+	public MailSender getMailSender() {
+		return mailSender;
+	}
+
+	public SimpleMailMessage getSimpleMailMessage() {
+		return simpleMailMessage;
+	}
 }
